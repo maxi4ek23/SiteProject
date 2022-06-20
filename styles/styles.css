@@ -1,0 +1,375 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100rem;
+  background: #eef2f4;
+  padding: 2rem 1.5rem;
+}
+
+.main h2 {
+  display: flex;
+  margin: auto;
+}
+
+.slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 800px;
+  height: 500px;
+}
+
+.manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manuals {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 2s;
+}
+
+.manuals:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manuals:hover {
+  background: rgb(250, 248, 250);
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+.auto {
+  position: absolute;
+  width: 800px;
+  margin-top: 460px;
+  display: flex;
+  justify-content: center;
+}
+
+.auto div {
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .auto .auto1 {
+  background: rgb(187, 59, 219);
+}
+
+#radio2:checked ~ .auto .auto2 {
+  background: rgb(187, 59, 219);
+}
+
+#radio3:checked ~ .auto .auto3 {
+  background: rgb(187, 59, 219);
+}
+
+
+
+.team {
+  max-width: 100rem;
+  padding: 2rem 1.5rem;
+  margin: 0 auto;
+  color: #241623;
+  background: #eef2f4;
+}
+
+.team h1 {
+  font-weight: 900;
+  font-size: 2.7rem;
+  max-width: 20ch;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+  list-style-type: none;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  aspect-ratio: 1/1;
+  position: relative;
+  padding: 1.5rem;
+  color: #ffffff;
+  backface-visibility: hidden;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.profile::before,
+.profile::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.profile::before {
+  background: linear-gradient(
+    to top,
+    hsl(0 0% 0% / 0.79) 0%,
+    hsl(0 0% 0% / 0.787) 7.8%,
+    hsl(0 0% 0% / 0.779) 14.4%,
+    hsl(0 0% 0% / 0.765) 20.2%,
+    hsl(0 0% 0% / 0.744) 25.3%,
+    hsl(0 0% 0% / 0.717) 29.9%,
+    hsl(0 0% 0% / 0.683) 34.3%,
+    hsl(0 0% 0% / 0.641) 38.7%,
+    hsl(0 0% 0% / 0.592) 43.3%,
+    hsl(0 0% 0% / 0.534) 48.4%,
+    hsl(0 0% 0% / 0.468) 54.1%,
+    hsl(0 0% 0% / 0.393) 60.6%,
+    hsl(0 0% 0% / 0.310) 68.3%,
+    hsl(0 0% 0% / 0.216) 77.3%,
+    hsl(0 0% 0% / 0.113) 87.7%,
+    hsl(0 0% 0% / 0) 100%
+  );
+  transition: 300ms opacity linear;
+}
+
+.profile::after {
+  background: linear-gradient(
+    45deg,
+    rgba(119, 54, 180, 0.7) 0,
+    rgba(93, 15, 145, 0) 100%
+  );
+  opacity: 0;
+  transition: 300ms opacity linear;
+}
+
+.profile > * {
+  z-index: 1;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  object-fit: cover;
+  filter: grayscale(1);
+  transition: filter 200ms ease, transform 250ms linear;
+}
+
+.profile:hover::after,
+.profile:focus::after,
+.profile:hover::before,
+.profile:focus::before {
+  opacity: 0.7;
+}
+
+.profile:hover p,
+.profile:focus p {
+  opacity: 1;
+  transition-delay: 200ms;
+}
+
+.profile:hover img,
+.profile:focus img {
+  filter: grayscale(0);
+  transform: scale(1.05) rotate(1deg);
+}
+
+
+.profile p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  opacity: 0;
+  transition: 300ms opacity linear, 300ms transform ease-in-out;
+}
+
+.roadMap {
+  max-width: 100rem;
+  background: #eef2f4;
+  padding: 2rem 1.5rem;
+  margin: 0 auto;
+}
+
+.roadMap h1 {
+  font-weight: 900;
+  font-size: 2.7rem;
+  max-width: 20ch;
+}
+
+.process-wrapper {
+  margin: auto;
+  max-width: 1080px;
+}
+
+#progress-bar-container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  height: 100px;
+  margin-top: 59px;
+}
+
+#progress-bar-container ul {
+  padding: 0;
+  margin: 0;
+  padding-top: 15px;
+  z-index: 9999;
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+}
+
+#progress-bar-container li::before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #aaa;
+  transition: all ease 0.3s;
+}
+
+#progress-bar-container li.active::before,
+#progress-bar-container li:hover::before {
+  background: deepskyblue;
+}
+
+#progress-bar-container li {
+  list-style: none;
+  float: left;
+  width: 20%;
+  text-align: center;
+  color: #aaa;
+  text-transform: uppercase;
+  font-size: 11px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all ease 0.2s;
+  vertical-align: bottom;
+  height: 59px;
+  position: relative;
+}
+
+#progress-bar-container li .step-inner {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  font-size: 14px;
+}
+
+#progress-bar-container li.active,
+#progress-bar-container li:hover {
+  color: deepskyblue;
+}
+
+#progress-bar-container li::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #777;
+  margin: auto;
+  border: 7px solid white;
+  border-radius: 50%;
+  margin-top: 40px;
+  box-shadow: 0 2px 13px -1px rgba(0, 0, 0, 0.3);
+  transition: all ease 0.2s;
+}
+
+#progress-bar-container li:hover::after {
+  background: deepskyblue;
+}
+
+#progress-bar-container li.active::after{
+  background: deepskyblue;
+}
+
+#progress-bar-container #line {
+  width: 80%;
+  margin: auto;
+  background: black;
+  height: 5px;
+  position: absolute;
+  left: 10%;
+  top: 57px;
+  z-index: 1;
+  border-radius: 50px;
+  transition: all ease 0.9s;
+}
+
+#progress-bar-container #line-process {
+  content: "";
+  width: 3%;
+  height: 100%;
+  background: deepskyblue;
+  background: linear-gradient(to right, deepskyblue 0%, #2ea3b7 100%);
+  position: absolute;
+  z-index: 2;
+  border-radius: 50px;
+  transition: all ease 0.9s;
+}
+
+#progress-content-section {
+  width: 90%;
+  margin: auto;
+  background: #f3f3f3;
+  border-radius: 4px;
+}
+
+#progress-content-section .section-content {
+  padding: 30px 40px;
+  text-align: center;
+}
