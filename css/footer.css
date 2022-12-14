@@ -1,0 +1,148 @@
+.footer {
+    width: 100%;
+    background-color: #848484;
+}
+
+.footer__container {
+    width: 80vw;
+    margin: 0 auto;
+    height: 25vh;
+}
+
+.footer__logo {
+    height: 40px;
+    width: 120px;
+}
+
+.top-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid white;
+    padding: 20px 0;
+}
+
+.icon-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+}
+
+.footer__paragraph {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+.icon-logo li {
+    list-style: none;
+}
+
+.icon-logo li .fa-brands {
+    font-size: 25px;
+    color: rgb(34, 10, 248);
+    line-height: 10px;
+}
+
+.icon-logo li a {
+    display: block;
+    width: 85px;
+    height: 35px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(34, 10, 248);
+}
+
+.footer__icon {
+    width: 35px;
+    height: 35px;
+}
+
+.bottom-footer {
+    padding-top: 10px;
+}
+
+.footer__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__btn {
+    display: block;
+    margin: 10px auto 0px;
+    width: 120px;
+    height: 25px;
+    color: white;
+    background-color: #FBB03B;
+    font-weight: 700;
+}
+
+.part {
+    display: flex;
+    align-items: center;
+}
+
+.border {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon__title {
+    margin-left: 10px;
+    color: white;
+}
+
+.email__title:hover {
+    border-bottom: 1px solid white;
+}
+
+@media (max-width: 768px) {
+    .footer__icons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .part {
+        padding: 10px 0;
+    }
+
+    .footer__container {
+        height: fit-content;
+        padding-bottom: 2vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .top-footer {
+        flex-direction: column;
+    }
+
+    .icon-logo {
+        padding-bottom: 15px;
+    }
+}
+
+@media (min-height: 1100px) {
+    .footer__container {
+        height: fit-content;
+        padding-bottom: 2vh;
+    }
+}
+
+@media (max-height: 600px) {
+    .footer__container {
+        height: fit-content;
+        padding-bottom: 2vh;
+    }
+}

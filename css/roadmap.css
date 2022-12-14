@@ -1,0 +1,382 @@
+.roadmap-page {
+    width: 100%;
+    height: fit-content;
+}
+
+.roadmap-page__container {
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.roadmap-page__container > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.roadmap-page__img {
+    width: 80px;
+	height: 80px;
+}
+
+.raodmap-page__title {
+    text-align: center;
+	font-weight: 700;
+	font-size: 50px;
+	color: black;
+}
+
+
+/*.timeline ul {
+    margin-top: 50px;
+}
+
+.timeline ul li {
+    position: relative;
+    width: 0;
+    border-left: 6px dotted #6497b1;
+    margin: 0 auto;
+}
+
+.timeline ul li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -11px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fafafa;
+    transition: background 1s ease-in-out;
+}
+
+.date {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 30px 0 10px;
+}
+
+.date-info {
+    width: 350px;
+    margin-bottom: 5px;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+}
+
+.date-description {
+    padding-top: 20px;
+}
+
+.timeline ul li:nth-child(2n + 0) > div {
+    margin-left: 70px;
+    transform: translateX(60px);
+}
+  
+.timeline ul li:nth-child(4n + 0) > div {
+    margin-left: -414px;
+    transform: translateX(-60px);
+}
+
+.block-date-title  {
+    position: relative;
+    top: -14px;
+    background: #c51f5d;
+    width: 350px;
+    padding: 5px 10px;
+}
+
+.date-info:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    border-style: solid;
+}
+
+.timeline ul li:nth-child(2n + 0) > div:before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #c51f5d transparent transparent;
+}
+  
+.timeline ul li:nth-child(4n + 0) > div:before {
+    transform: translateX(365px);
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #c51f5d;
+}*/
+
+.timeline {
+    margin: 0 auto;
+}
+
+.timeline ul {
+    list-style: none;
+    margin-top: 50px;
+}
+
+/* Central Line */
+.timeline ul li {
+    position: relative;
+    width: 0;
+    border-left: 6px dotted #011f4b;
+    margin: 0 auto;
+}
+
+/* Dots */
+.timeline ul li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -11px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #6ccdf3;
+    transition: background 1s ease-in-out;
+}
+
+/* Year */
+.timeline ul h3 {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 30px 0 10px;
+}
+
+/* Boxes &  Bottom Text */
+.timeline ul li>div {
+    width: 350px;
+    margin-bottom: 5px;
+    text-align: center;
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s ease-in-out;
+}
+
+.timeline ul li>div p {
+    padding-top: 20px;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.timeline ul li:nth-child(2n + 0)>div {
+    margin-left: 100px;
+    transform: translateX(60px);
+}
+
+.timeline ul li:nth-child(4n + 0)>div {
+    margin-left: -460px;
+    transform: translateX(-60px);
+}
+
+.timeline ul li>div>div {
+    position: relative;
+    top: -11px;
+    background: #FBB03B;
+    width: 350px;
+    padding: 5px 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+
+/* Top boxes arrows */
+.timeline ul li>div:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    border-style: solid;
+}
+
+.timeline ul li:nth-child(2n + 0)>div:before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #FBB03B transparent transparent;
+}
+
+.timeline ul li:nth-child(4n + 0)>div:before {
+    transform: translateX(365px);
+    border-width: 8px 0 8px 16px;
+    border-color: transparent transparent transparent #FBB03B;
+}
+
+.timeline ul li.show>div {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
+.timeline ul li.show:before {
+    background: #FBB03B;
+}
+
+@media (max-width: 1200px) {
+
+    .timeline ul li>div,
+    .timeline ul li>div>div {
+        width: 270px;
+    }
+
+    .timeline ul li:nth-child(4n + 0)>div {
+        margin-left: -380px;
+    }
+
+    .timeline ul li:nth-child(4n + 0)>div:before {
+        transform: translateX(285px);
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .timeline ul li>div,
+    .timeline ul li>div>div {
+        width: 200px;
+    }
+
+    .timeline ul li:nth-child(4n + 0)>div {
+        margin-left: -300px;
+    }
+
+    .timeline ul li:nth-child(4n + 0)>div:before {
+        transform: translateX(215px);
+    }
+}
+
+@media (max-width: 800px) {
+
+    .timeline ul li>div,
+    .timeline ul li>div>div {
+        width: 160px;
+    }
+
+    .timeline ul li>div>div {
+        height: 30px;
+        top: -7px;
+    }
+
+    .timeline ul li:nth-child(4n + 0)>div {
+        margin-left: -270px;
+    }
+
+    .timeline ul li:nth-child(4n + 0)>div:before {
+        transform: translateX(175px);
+    }
+
+    .timeline ul li>div p {
+        padding-top: 5px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .date-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: black;
+    }
+}
+
+@media (max-width: 700px) {
+    .timeline ul li {
+        margin: 0 50px;
+    }
+
+    .timeline ul li>div,
+    .timeline ul li>div>div {
+        width: calc(100vw - 400px);
+    }
+
+    .timeline ul h3 {
+        text-align: unset;
+        padding-left: 30px;
+    }
+
+    .timeline ul li:nth-child(4n + 0)>div {
+        margin-left: 100px;
+        transform: translateX(60px);
+    }
+
+    .timeline ul li:nth-child(4n + 0)>div:before {
+        transform: translateX(0);
+        border-width: 8px 16px 8px 0;
+        border-color: transparent #FBB03B transparent transparent;
+    }
+
+    .timeline ul li.show>div {
+        transform: none;
+    }
+}
+
+@media (max-width: 520px) {
+    .timeline ul li>div,
+    .timeline ul li>div>div {
+        width: calc(100vw - 300px);
+    }
+}
+
+@media (max-width: 420px) {
+    .timeline ul li:nth-child(2n + 0)>div,
+    .timeline ul li:nth-child(4n + 0)>div {
+        margin-left: -10px;
+        transform: translateX(60px);
+    }
+
+    .timeline ul li>div {
+        width: calc(100vw - 220px);
+    }
+
+    .timeline ul li>div p {
+        line-height: 15px;
+    }
+
+    .timeline ul li>div>div {
+        width: calc(100vw - 280px);
+    }
+
+    .date-title {
+        font-size: 12px;
+        font-weight: 700;
+        color: black;
+    }
+}
+
+@media (max-width: 380px) {
+    .timeline ul li>div>div {
+        width: calc(100vw - 250px);
+    }
+}
+
+@media (max-width: 350px) {
+    .timeline ul li>div>div {
+        width: calc(100vw - 230px);
+    }
+    .timeline ul li:nth-child(2n + 0)>div,
+    .timeline ul li:nth-child(4n + 0)>div {
+        margin-left: -30px;
+        transform: translateX(60px);
+    }
+}
+
+@media (max-width: 330px) {
+    .timeline ul li>div>div {
+        width: calc(100vw - 215px);
+    }
+}
+

@@ -1,0 +1,67 @@
+body.lock {
+	overflow: hidden;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	transition: all 1s ease 0s;
+}
+
+.header.scrolled {
+	background: black;
+	transition: all 1s ease 0s;
+}
+
+.header__container {
+	width: 75vw;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 8vh;
+}
+
+.header__logo {
+	z-index: 5;
+}
+
+.header__logo img {
+	height: 40px;
+	width: 120px;
+}
+
+.menu__link {
+	color: white;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.menu__link:hover {
+	border-bottom: 1px solid white;
+}
+
+.menu__list > li {
+	margin-right: 30px;
+}
+
+.menu__icon {
+	display: none;
+}
+
+.rotated-block {
+	position: absolute;
+	width: 35vw;
+	height: 8vh;
+	top: 0;
+	right: -5%;
+	background: #10151b;
+	transform: skewX(-25deg);
+}
+
+.none {
+	display: none;
+}
