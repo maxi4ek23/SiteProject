@@ -1,162 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
-    <title>Main document</title>
-    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
 </head>
+
 <body>
-    <!--Розділяємо основний блок на два головні підблоки-->
-    <div>
-        
-        <div class="main">
-            <h2>Some text or info</h2>
-            <div class="slider">
-                <div class="slides">
-                    <input type="radio" id="radio1" name="radios">
-                    <input type="radio" id="radio2" name="radios">
-                    <input type="radio" id="radio3" name="radios">
-                    <div class="slide first">
-                        <img src="img/2.jpg" alt="">
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__menu menu">
+                    <div class="menu__icon">
+                        <span></span>
                     </div>
-                    <div class="slide">
-                        <img src="img/3.jpg" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="img/4.jpg" alt="">
-                    </div>
-                    <div class="auto">
-                        <div class="auto1"></div>
-                        <div class="auto2"></div>
-                        <div class="auto3"></div>
+                    <nav class="menu__body">
+                        <ul class="menu__list">
+                            <li>
+                                <a data-goto=".page__section1" href="#" class="menu__link">About us</a>
+                            </li>
+                            <li>
+                                <a data-goto=".page__section2" href="#" class="menu__link">Our team</a>
+                            </li>
+                            <li>
+                                <a data-goto=".page__section3" href="#" class="menu__link">Roadmap</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <a href="" class="header__logo"><img src="./img/remove.png" alt=""></a>
+                <div class="rotated-block"></div>
+            </div>
+        </header>
+        <div class="for_img">
+            <div class="for_img__container">
+                <div class="demo-content">
+                    <div class="demo-content_block">
+                        <h1>We make delivery easy</h1>
                     </div>
                 </div>
-                <div class="manual">
-                    <label for="radio1" class="manuals"></label>
-                    <label for="radio2" class="manuals"></label>
-                    <label for="radio3" class="manuals"></label>
+            </div>
+            <div class="image _ibg">
+                <img id="big" class="drone" src="./img/Drone-1.png" alt="">
+            </div>
+        </div>
+        <div class="info">
+            <div class="info__container">
+                <div class="info__block">
+                    <img class="info__drone img" src="./img/drone-post.png" alt="">
+                    <h2 class="info__title title">Who are we!</h2>
+                    <img class="info_rectangle img" src="./img/rectangle.png" alt="">
+                    <div class="info__description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis
+                        numquam optio laborum aspernatur sint sit impedit maiores nostrum aut, ipsa veritatis explicabo
+                        nemo, voluptatibus quo. Porro ducimus omnis eveniet incidunt animi voluptates nulla et
+                        consequuntur quidem eaque! Ea nemo facere ad laborum possimus commodi odit odio dolores adipisci
+                        cumque provident labore, omnis illum distinctio dolorum non fuga accusantium aspernatur sapiente
+                        maiores eligendi quia nulla temporibus! Saepe, voluptas quas! Vero impedit saepe laboriosam
+                        libero, aspernatur accusantium provident vel expedita est explicabo consequatur debitis
+                        architecto sint in ut quia incidunt eaque reprehenderit voluptatum numquam asperiores at quod.
+                        Velit, quis? Cumque laborum quibusdam odit aperiam iste veritatis numquam esse obcaecati atque
+                        provident, assumenda fugiat facilis praesentium sed porro architecto necessitatibus repellat
+                        nesciunt! Fuga ex nisi nam et vero quam voluptatum natus omnis reiciendis autem ad quo excepturi
+                        voluptas recusandae quasi sapiente, dolor perspiciatis adipisci culpa accusamus. Culpa pariatur,
+                        eius rem blanditiis laudantium, repellendus ab est a doloribus dolorem aliquam sit hic facilis
+                        at. Sunt debitis recusandae ipsam unde atque similique itaque odio, aspernatur labore fugit.
+                        Voluptas, ducimus reprehenderit facilis quo minima aperiam. Accusantium iure quae autem fugit
+                        quaerat odio tenetur. Vitae, adipisci doloribus. Officia vitae ratione eveniet voluptate maxime
+                        iure ullam, quod quas sequi quam. Possimus obcaecati tenetur molestias quaerat eligendi
+                        blanditiis sit ipsa explicabo saepe quibusdam ipsum suscipit, labore eveniet a id sequi alias,
+                        aperiam maxime commodi. Suscipit neque incidunt obcaecati alias sequi recusandae cum. Eveniet
+                        quisquam quas mollitia, accusantium repellendus et doloribus dicta at officiis blanditiis
+                        consequatur ullam excepturi aspernatur sint!</div>
                 </div>
             </div>
         </div>
-        
-    
-
-
-
-        <div class="team">
-            <h1>Our Team</h1>
-            <ul class="team-container">
-                <li>
-                    <a href="#" target="_blank" class="profile">
-                        <h2>Maxym Pelyshko</h2>
-                        <p>Developer - Maxym Pelyshko</p>
-                        <img src="img/photo.jpg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" class="profile">
-                        <h2>Olha Rybenchyk</h2>
-                        <p>Team Leader - Olha Rybenchyk</p>
-                        <img src="img/photo.jpg" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" class="profile">
-                        <h2>Danilo Kovalchuk</h2>
-                        <p>3D-Designer - Danilo Kovalchuk</p>
-                        <img src="img/photo.jpg" alt="">
-                    </a>
-                </li>
-            </ul>
+        <div class="section-with-image page__section1">
+            <div class="section-with-image__container">
+                <img class="section-with-image__first arrow" src="./img/arrow1.png" alt="">
+                <img class="section-with-image__second arrow" src="./img/arrow1.png" alt="">
+                <h2 class="section-with-image__title title">Our Goal</h2>
+                <img class="section-with-image__rectangle img" src="./img/white-line.png" alt="">
+                <div class="section-with-image__block">
+                    <div class="section-with-image__text">
+                        <div class="text-first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt modi
+                            tempora eligendi explicabo impedit deserunt quasi, animi illo exercitationem nisi quae
+                            voluptate rem nostrum eos?</div>
+                        <div class="text-second">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
+                            voluptas ab a sunt debitis est nam tenetur assumenda labore molestiae, velit doloremque
+                            quod, aspernatur architecto!</div>
+                    </div>
+                    <div class="slider">
+                        <div class="slides">
+                            <input type="radio" id="radio1" name="radios">
+                            <input type="radio" id="radio2" name="radios">
+                            <input type="radio" id="radio3" name="radios">
+                            <input type="radio" id="radio4" name="radios">
+                            <input type="radio" id="radio5" name="radios">
+                            <div class="slide first">
+                                <img src="./img/drone.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img/drone1.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img/drone2.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img/drone3.png" alt="">
+                            </div>
+                            <div class="slide">
+                                <img src="./img/drone4.png" alt="">
+                            </div>
+                            <div class="auto">
+                                <div class="auto1"></div>
+                                <div class="auto2"></div>
+                                <div class="auto3"></div>
+                                <div class="auto4"></div>
+                                <div class="auto5"></div>
+                            </div>
+                            <div class="manual">
+                                <label for="radio1" class="manuals"></label>
+                                <label for="radio2" class="manuals"></label>
+                                <label for="radio3" class="manuals"></label>
+                                <label for="radio4" class="manuals"></label>
+                                <label for="radio5" class="manuals"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="roadMap">
-            <h1>ROADMAP</h1>
-            <div class="process-wrapper">
-                <div id="progress-bar-container">
+        <div class="team-page page__section2">
+            <div class="team-page__container">
+                <img class="team-page__img" src="./img/remove.png" alt="">
+                <h1 class="team-page__title title">Our Team</h1>
+                <img class="team-page__rectangle" src="./img/rectangle.png" alt="">
+                <ul class="team-container">
+                    <li>
+                        <a href="#" target="_blank" class="profile">
+                            <h2>Maxym Pelyshko</h2>
+                            <p>Developer - Maxym Pelyshko</p>
+                            <img src="img/photo.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="profile">
+                            <h2>Olha Rybenchyk</h2>
+                            <p>Team Leader - Olha Rybenchuk</p>
+                            <img src="img/olya.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="profile">
+                            <h2>Danilo Kovalchuk</h2>
+                            <p>3D-Designer - Danylo Kovalchuk</p>
+                            <img src="img/photo.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank" class="profile">
+                            <h2>Bogdan Dragan</h2>
+                            <p>Designer - Bogdan Dragan</p>
+                            <img src="img/photo.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="roadmap-page page__section3">
+            <div class="roadmap-page__container">
+                <img class="roadmap-page__img img" src="./img/timeline.png" alt="">
+                <h2 class="raodmap-page__title title">Our Roadmap</h2>
+                <div class="timeline">
                     <ul>
-                        <li class="step step01 active">
-                            <div class="step-inner">HOME WORK</div>
+                        <h3 class="date">October 2021</h3>
+                        <li>
+                            <div class="date-info">
+                                <div class="block-date-title">
+                                    <h4 class="date-title">Сreating a team</h4>
+                                </div>
+                                <p class="date-description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab fugit
+                                    libero dolor rerum repellat tenetur enim impedit?
+                                </p>
+                            </div>
                         </li>
-                        <li class="step step02">
-                            <div class="step-inner">RESPONSIVE PART</div>
+                        <h3 class="date">December 2021</h3>
+                        <li>
+                            <div class="date-info">
+                                <div class="block-date-title">
+                                    <h4 class="date-title">First pitching</h4>
+                                </div>
+                                <p class="date-description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab fugit
+                                    libero dolor rerum repellat tenetur enim impedit?
+                                </p>
+                            </div>
                         </li>
-                        <li class="step step03">
-                            <div class="step-inner">CREATIVE CREATIONS</div>
+                        <h3 class="date">May 2022</h3>
+                        <li>
+                            <div class="date-info">
+                                <div class="block-date-title">
+                                    <h4 class="date-title">Second pitching</h4>
+                                </div>
+                                <p class="date-description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab fugit
+                                    libero dolor rerum repellat tenetur enim impedit?
+                                </p>
+                            </div>
                         </li>
-                        <li class="step step04">
-                            <div class="step-inner">TEST PART</div>
-                        </li>
-                        <li class="step step05">
-                            <div class="step-inner">LOCATIONS</div>
+                        <h3 class="date">December 2022</h3>
+                        <li>
+                            <div class="date-info">
+                                <div class="block-date-title">
+                                    <h4 class="date-title">Third pitching</h4>
+                                </div>
+                                <p class="date-description">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab fugit
+                                    libero dolor rerum repellat tenetur enim impedit?
+                                </p>
+                            </div>
                         </li>
                     </ul>
-                    <div id="line">
-                        <div id="line-process"></div>
-                    </div>
-                </div>
-
-                <div id="progress-content-section"> 
-                    <div class="section-content discovery active">
-                        <h2>SEPTEMBER - DECEMBER 2021</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                             Et doloremque veritatis mollitia provident unde! 
-                             Obcaecati doloremque tempore, culpa fugit ut natus sed 
-                             consectetur aperiam nemo quas. Ex explicabo cumque quod?
-                        </p>
-                    </div>
-                    <div class="section-content strategy">
-                        <h2>JANUARY - JUNE 2022</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                             Et doloremque veritatis mollitia provident unde! 
-                             Obcaecati doloremque tempore, culpa fugit ut natus sed 
-                             consectetur aperiam nemo quas. Ex explicabo cumque quod?
-                        </p>
-                    </div>
-                    <div class="section-content creative">
-                        <h2>SEPTEMBER - DECEMBER 2022</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                             Et doloremque veritatis mollitia provident unde! 
-                             Obcaecati doloremque tempore, culpa fugit ut natus sed 
-                             consectetur aperiam nemo quas. Ex explicabo cumque quod?
-                        </p>
-                    </div>
-                    <div class="section-content production">
-                        <h2>TEST SECTION</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                             Et doloremque veritatis mollitia provident unde! 
-                             Obcaecati doloremque tempore, culpa fugit ut natus sed 
-                             consectetur aperiam nemo quas. Ex explicabo cumque quod?
-                        </p>
-                    </div>
-                    <div class="section-content analysis">
-                        <h2>LOCATIONS</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                             Et doloremque veritatis mollitia provident unde! 
-                             Obcaecati doloremque tempore, culpa fugit ut natus sed 
-                             consectetur aperiam nemo quas. Ex explicabo cumque quod?
-                        </p>
-                    </div>
-                    
-
                 </div>
             </div>
         </div>
-        
-
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="top-footer">
+                    <div class="icon-logo">
+                        <img class="footer__logo" src="./img/remove.png" alt="">
+                        <li><a target="_blank" href="https://www.linkedin.com/company/meva-team/">Linked<i class="fa-brands fa-linkedin"></i></a></li>
+                    </div>
+                    <p class="footer__paragraph">@2021 LPNU</p>
+                </div>
+                <div class="bottom-footer">
+                    <div>
+                        <div class="footer__icons">
+                            <div class="location part">
+                                <div class="border">
+                                    <img class="footer__icon" src="./img/location.png" alt="">
+                                </div>
+                                <p class="icon__title"> Ukraine</p>
+                            </div>
+                            <div class="telephone part">
+                                <div class="border">
+                                    <img class="footer__icon" src="./img/telephone.png" alt="">
+                                </div>
+                                <p class="icon__title">0991199399</p>
+                            </div>
+                            <div class="email part">
+                                <div class="border">
+                                    <img class="footer__icon" src="./img/email.png" alt="">
+                                </div>
+                                <a class="icon__title email__title" href="mailto: maxi4ek23@gmail.com">maxi4ek23@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="footer__btn">IOT Edition</button>
+                </div>
+            </div>
+        </footer>
 
     </div>
-
+    <script type="module" src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/9b587e3ba1.js" crossorigin="anonymous"></script>
 </body>
-</html> 
+
+</html>

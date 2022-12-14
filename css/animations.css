@@ -1,0 +1,47 @@
+@keyframes light {
+    0% {
+        opacity: 0.5;
+    }
+	15% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0.5;
+    }
+	45% {
+        opacity: 1;
+    }
+	60% {
+        opacity: 0.5;
+    }
+    80% {
+        opacity: 1;
+    }
+	100% {
+		opacity: 0.5;
+	}
+}
+
+@keyframes dark {
+    0% {
+        opacity: 1;
+    }
+	15% {
+        opacity: 0.5;
+    }
+    30% {
+        opacity: 1;
+    }
+	45% {
+        opacity: 0.5;
+    }
+	60% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0.5;
+    }
+	100% {
+		opacity: 1;
+	}
+}
